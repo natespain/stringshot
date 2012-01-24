@@ -210,11 +210,28 @@ body {
 	background: #fff url(../images/bg_body.png) repeat;
 }
 
+h1, h2, h3{
+	font-family: 'Cabin', Arial, sans-serif;
+	font-weight: 400;
+}
+
 
 header {
 	background: #fff url(../images/bg_header.png) repeat-x;
 	height: 147px;
 }
+
+img {
+	max-width: 100%;
+}
+
+footer{
+	width: 90%;
+	margin: 0 auto;
+	font-size: .9em;
+}
+
+/* NAVIGATION */
 
 nav{
 	width: 100%;
@@ -255,7 +272,7 @@ nav ul li a:active, nav ul li a:hover, nav ul li a:visited{
 	color: rgba(0,0,0,1);	
 }
 
-nav ul li span.inlineItalics{
+span.inlineItalics{
 	text-transform: none;
 	font-weight: 400;
 	font-style: italic;
@@ -263,16 +280,61 @@ nav ul li span.inlineItalics{
 	font-size: .8em;
 }
 
+/* HOME */
+
 #main{
 	width: 90%;
 	margin: 0 auto;
 }
 
-#main h1{
-	
+h1{
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	color: #999;
 }
 
+#main h1{
+	margin-top:40px;
+	margin-bottom:45px;
+}
 
+h2 {	
+	text-transform: uppercase;
+	line-height: 1em;
+	letter-spacing: 0.05em;
+	font-size: 1.3em;
+}
+
+#featuredProject{
+	background: rgba(189, 189, 189, .2);
+	padding: 4px 10px 10px;
+}
+
+h3 {	
+	letter-spacing: 0.05em;
+	font-size: 1.3em;
+}
+
+p.responsibilities{
+	font-style: italic;
+	color: rgba(153, 153, 153, 1);
+}
+
+p.projectDescription{
+	line-height: 1.6em;
+}
+
+#designPortfolioLink, #photoGalleryLink{
+	margin-top: 30px;
+	background: rgba(189, 189, 189, .2);
+	padding: 4px 10px 10px;
+}
+
+#photoGalleryLink{
+	margin-bottom: 50px;
+}
 
 
 /* =============================================================================
