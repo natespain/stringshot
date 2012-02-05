@@ -1,0 +1,167 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Stringshot :: Online home of Nathan Spainhour</title>
+	<meta name="description" content="Stringshot is the online home of Nathan Spainhour. ">
+	<meta name="author" content="Nathan Spainhour">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,400italic,500italic' rel='stylesheet' type='text/css'>
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	
+	<!-- include the Tools -->
+	<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+	
+</head>
+<body>
+
+<div id="container">
+	
+	<header>
+		<nav>
+			<a href="index.html" class="logo ir"></a>
+			<ul>
+				<li><a href="#">Design<br /><span class="inlineItalics">portfolio</span></a></li>
+				<li><a href="#">Photo<br /><span class="inlineItalics">gallery</span></a></li>
+				<li><a href="#">About<br /><span class="inlineItalics">& social stuff</span></a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="about" role="main">
+	
+	<figure class="twitterPic"><img src="images/nathanPic.jpg" alt="Picture of Nathan"/></figure> 
+	<h1 class="aboutHeader">My name is Nathan Spainhour. I’m an art director, interactive designer, photophile and digital strategist living in Greenville, SC. Glad you could stop by, <a href="#" class="textLink">drop me a line</a> if you’d like.</h1>
+	
+	<h2 class="aboutSectionHead">Expertise <span class="inlineItalics">&amp; skills</span></h2>
+	
+	<div class="brandingBox">
+	<h3 class="brandingTitle">Branding &amp; Identity</h3>
+	<ul class="brandingList">
+		<li>Creative Direction</li>	
+		<li>Naming</li>
+		<li>Brand Creation</li>
+		<li>Logo Development</li>
+		<li>Collateral</li>
+		<li>Brand Strategy</li>
+		<li>Digital & Online Strategy</li>
+	</ul>
+	</div>
+	<div class="digitalBox">
+	<h3 class="digitalTitle">Digital &amp; Online</h3>
+	<ul class="digitalList">
+		<li>Website Design & Development</li>	
+		<li>Mobile App Design</li>
+		<li>User Interface Design</li>
+		<li>Blog Design</li>
+		<li>Wordpress Integration</li>
+		<li>Search Engine Optimization</li>
+		<li>Search Engine Marketing</li>
+		<li>Digital Advertising</li>
+	</ul>
+	</div>
+	<div class="printBox">
+	<h3 class="printTitle">Print &amp; Production</h3>
+	<ul class="printList">
+		<li>Packaging Design</li>	
+		<li>Photography</li>
+		<li>Brochures</li>
+		<li>Posters</li>
+		<li>Point of Purchase</li>
+	</ul>
+	</div>
+	<div class="resumeBox clearfix">
+	<h3 class="resumeTitle">Resume (pdf)</h3>
+	<a class="btn resumeDownload">download resume</a>
+	</div>
+	
+	
+	<h2 class="socialSectionHead">Get in Touch <span class="inlineItalics">&amp; social links</span></h2>
+	
+	<div class="twitterBox">
+	<h3 class="twitter">Recent <a href="#" class="textLink">Tweets</a></h3>
+	<ul class="twitterTweets">
+		<li>Feed 1</li>	
+		<li>Feed 2</li>
+	</ul>
+	</div>
+	<div class="dribbbleBox">
+	<h3 class="dribbble">Latest <a href="#" class="textLink">Dribbble</a> shot</h3>
+	<div class="dribbbleShot">
+	</div>
+	</div>
+	<div class="instagramBox">
+	<h3 class="instagram"><a href="#" class="textLink">Instagram</a> photo feed</h3>
+	<ul class="instagramPics">
+		<li>Pic 1</li>	
+		<li>Pic 2</li>
+		<li>Pic 3</li>
+		<li>Pic 4</li>
+		<li>Pic 5</li>
+	</ul>
+	</div>
+	<div class="contactBox">
+	<h3 class="contact">Drop me a line</h3>
+	<form id="contactForm">
+	<fieldset>
+      <p>
+         <label>Your Name</label>
+         <input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="30" />
+      </p>
+      <p>
+         <label>Email</label>
+         <input type="email" name="email" required="required" />
+      </p>
+      <p>
+         <label>Message</label>
+         <input type="text" name="message" required="required" />
+      </p>
+      <button type="submit">Email Me</button>
+    </fieldset>
+	</form>
+	</div>
+	
+	</section>
+	
+	<footer>
+		<p class="copyright">Copyright 2012 Nathan Spainhour  |  <a href="#">download resume</a></p>
+	</footer>
+</div> <!--! end of #container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+	$("#contactForm").validator();
+</script>
+
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+<!-- end scripts-->
+
+</body>
+</html>
