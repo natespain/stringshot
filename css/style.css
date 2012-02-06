@@ -217,6 +217,9 @@ h1, h2, h3{
 	font-weight: 400;
 }
 
+p{
+	line-height: 1.6em;
+}
 
 header {
 	background: #fff url(../images/bg_headertall.png) repeat-x;
@@ -468,6 +471,7 @@ h2 {
 h3 {	
 	letter-spacing: 0.05em;
 	font-size: 1.3em;
+	width: 100%;
 }
 
 p.responsibilities{
@@ -476,7 +480,7 @@ p.responsibilities{
 }
 
 p.projectDescription{
-	line-height: 1.6em;
+	
 	padding-bottom: 10px;
 }
 
@@ -636,8 +640,9 @@ a.project .projectDesc p{
 	text-transform: uppercase;
 	font-style: italic;
 	letter-spacing: .5px;
-	margin:20px 0 0 0;
+	margin:20px 0 10px 0;
 	padding:0;
+	color:#a4a4a4;
 }
 
 #about h3.resumeTitle{
@@ -664,7 +669,66 @@ a.project .projectDesc p{
 	padding-top: 5px;
 }
 
-#contactForm{}
+.twtr-hd, .twtr-ft{
+	display: none;
+}
+
+.twtr-tweet-wrap{
+	padding: 10px 10px 10px 0 !important;
+}
+
+.dribbbleShot img{
+	padding: 12px 0 0 0;
+}
+
+.instagram{
+	padding-bottom: 12px;
+}
+
+#contactForm input, #contactForm textarea{
+	border: solid 1px #ccc;
+	width: 100%;
+	background: #eee;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#contactForm input{
+	height: 20px;
+}
+
+#contactForm textarea{
+	height: 150px;
+}
+
+#contactForm p label{
+	padding-bottom: 10px;
+}
+
+#contactForm button{
+	padding: 4px 10px;
+	border: none;
+	color:#fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #b3878a;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: 0.03em;
+	font-size: 1.0em;
+	-webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: all 0.3s ease-out;  /* FF4+ */
+    -ms-transition: all 0.3s ease-out;  /* IE10 */
+    -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+    transition: all 0.3s ease-out;
+}
+
+#contactForm button:hover{
+	background: #97696d;
+}
+
 
 /* =============================================================================
    Non-semantic helper classes
@@ -752,13 +816,30 @@ nav ul li:first-child{
 
 /* ABOUT */
 
-.brandingBox, .printBox{
+.twitterPic{
+	display: block;
+	float: left;
+	padding-right: 15px;
+	padding-top: 7px;
+	padding-bottom: 50px;
+}
+
+h1.aboutHeader{
+	
+}
+
+h2.aboutSectionHead{
+	clear:both;
+	
+}
+
+.brandingBox, .printBox, .twitterBox, .instagramBox{
 	float: left;
 	width:47.916666666667%; /*460/960*/
 	margin-right:1.041666666667%;/*10/960*/
 }
 
-.digitalBox, .resumeBox{
+.digitalBox, .resumeBox, .dribbbleBox, .contactBox{
 	float: left;
 	width:47.916666666667%; /*460/960*/
 	margin-right:1.041666666667%;/*10/960*/
@@ -766,7 +847,11 @@ nav ul li:first-child{
 
 .socialSectionHead{
 	clear: both;
-	padding: 50px 0 0;
+	padding-top: 50px;
+}
+
+.contactBox{
+	margin-bottom: 50px;
 }
 
 } /* end 480px */
@@ -902,12 +987,44 @@ a.btn{
 	padding-left:2.083333333333%;/*20/960*/
 }
 
+/* ABOUT */
+
+.brandingBox, .printBox, .digitalBox, .resumeBox, .twitterBox, .instagramBox, .dribbbleBox, .contactBox{
+	float: left;
+	width:20.833333333333%; /*200/960*/
+}
+
+.brandingBox, .twitterBox{
+	margin-right:1.041666666667%;/*10/960*/
+}
+
+.digitalBox, .printBox, .instagramBox, .dribbbleBox{
+	margin-right:1.041666666667%;/*10/960*/
+	margin-left:1.041666666667%;/*10/960*/
+}
+
+.resumeBox, .contactBox{
+	margin-left:1.041666666667%;/*10/960*/
+}
+
+#about h3.resumeTitle{
+	margin-bottom:5px;
+}
+
+#about ul.instagramPics{
+	padding-top: 50px;
+}
+
+form#contactForm{
+	padding-top: 30px;
+}
+
 }/* end 768px */
 
 @media only screen and (min-width: 930px) {
   /* Style adjustments for viewports 940px and over (tablet landscape) */
 
-nav, #main, #design, #project{
+nav, #main, #design, #project, #about{
 	max-width: 940px;
 }
 

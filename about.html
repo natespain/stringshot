@@ -18,8 +18,8 @@
 
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 	
-	<!-- include the Tools -->
-	<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+	<!-- Form Validator -->
+	<script src="http://cdn.jquerytools.org/1.2.6/form/jquery.tools.min.js"></script>
 	
 </head>
 <body>
@@ -57,7 +57,7 @@
 	</ul>
 	</div>
 	<div class="digitalBox">
-	<h3 class="digitalTitle">Digital &amp; Online</h3>
+	<h3 class="digitalTitle">Digital &amp; Interactive</h3>
 	<ul class="digitalList">
 		<li>Website Design & Development</li>	
 		<li>Mobile App Design</li>
@@ -79,7 +79,7 @@
 		<li>Point of Purchase</li>
 	</ul>
 	</div>
-	<div class="resumeBox clearfix">
+	<div class="resumeBox">
 	<h3 class="resumeTitle">Resume (pdf)</h3>
 	<a class="btn resumeDownload">download resume</a>
 	</div>
@@ -90,23 +90,52 @@
 	<div class="twitterBox">
 	<h3 class="twitter">Recent <a href="#" class="textLink">Tweets</a></h3>
 	<ul class="twitterTweets">
-		<li>Feed 1</li>	
-		<li>Feed 2</li>
+		<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '#cccccc'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#666666',
+      links: '#b3878a'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('nathanspainhour').start();
+</script>
 	</ul>
 	</div>
 	<div class="dribbbleBox">
 	<h3 class="dribbble">Latest <a href="#" class="textLink">Dribbble</a> shot</h3>
 	<div class="dribbbleShot">
+		<img src="images/dribbbleShot.jpg" alt="Dribbble Shot" />
 	</div>
 	</div>
 	<div class="instagramBox">
 	<h3 class="instagram"><a href="#" class="textLink">Instagram</a> photo feed</h3>
 	<ul class="instagramPics">
+<!--
 		<li>Pic 1</li>	
 		<li>Pic 2</li>
 		<li>Pic 3</li>
 		<li>Pic 4</li>
 		<li>Pic 5</li>
+-->
 	</ul>
 	</div>
 	<div class="contactBox">
@@ -123,9 +152,11 @@
       </p>
       <p>
          <label>Message</label>
-         <input type="text" name="message" required="required" />
+         <textarea name="message" rows="10" required="required"></textarea>
       </p>
-      <button type="submit">Email Me</button>
+      
+      
+      <button type="submit">email me</button>
     </fieldset>
 	</form>
 	</div>
@@ -143,8 +174,8 @@
 <!-- scripts concatenated and minified via ant build script-->
 
 <script src="js/plugins.js"></script>
+<script src="js/jquery.instagram.js"></script>
 <script src="js/script.js"></script>
-
 <script>
 	$("#contactForm").validator();
 </script>
